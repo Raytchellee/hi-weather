@@ -1,0 +1,61 @@
+/* page.module.css */
+.weatherComponent {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.searchContainer {
+  margin-bottom: 20px;
+}
+
+.searchContainer input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.searchContainer button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.weatherCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.weatherCard {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.weatherDetails {
+  display: flex;
+  align-items: center;
+}
+
+.weatherDetails img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.temperature {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.2em;
+}

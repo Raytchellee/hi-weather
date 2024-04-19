@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+}
+
+.title_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.temp {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.desc {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
