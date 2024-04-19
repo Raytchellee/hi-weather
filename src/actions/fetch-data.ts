@@ -22,7 +22,7 @@ export const useActions = () => {
   const [loading, setLoading] = useRecoilState(LoadingAtom);
   const baseUrl = "https://api.openweathermap.org";
   const defaultUnit = "metric";
-  const apiKey = "e8746e3d4f4ecb735e93354b84075ffe";
+  const apiKey = process.env.NEXT_PUBLIC_API_KEY;
   const defaultCity = "lagos";
   const defaultCount = 40;
 
