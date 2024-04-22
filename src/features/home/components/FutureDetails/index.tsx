@@ -1,19 +1,27 @@
 import React, { useEffect, useState } from "react";
 import Card from "../WeatherCard";
 import { useRecoilState } from "recoil";
-import { futureWeatherStore } from "@/stores";
+import { forecastLoading, futureWeatherStore } from "@/stores";
 import { ForecastList } from "@/interface/data.interface";
 import styles from "./index.module.css";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 interface FutureDetailsProps {
-  data: any[];
+  setModal: (modal: string) => void;
+  setModalData: (data: any) => void;
 }
 
-// const FutureDetails: React.FC<FutureDetailsProps> = ({ data }) => {
-const FutureDetails: React.FC = () => {
+const FutureDetails: React.FC<FutureDetailsProps> = ({
+  setModal,
+  setModalData,
+}) => {
   const [forecast, setForecast] = useRecoilState(futureWeatherStore);
+  const [load, setLoad] = useRecoilState(forecastLoading);
   const [dailyData, setDailyData] = useState({});
   const [summary, setSummary] = useState<ForecastList[]>([]);
+
+  const loading = load.visible && load.type == "get-forecast-weather";
 
   const getForecastData = () => {
     const tempDaily: { [key: string]: any[] } = {};
@@ -40,15 +48,23 @@ const FutureDetails: React.FC = () => {
     getForecastData();
   }, [forecast]);
 
-  useEffect(() => {
-    console.log("dataringggg", dailyData, summary);
-  }, [dailyData, summary]);
-
   return (
     <div className={styles.container}>
-      {summary.map((item: ForecastList, idx: number) => (
-        <Card key={idx} data={item} />
-      ))}
+      {loading
+        ? Array(5)
+            .fill(1)
+            .map((item: number, idx: number) => (
+              <Skeleton key={idx} className={styles.card} />
+            ))
+        : summary.map((item: ForecastList, idx: number) => (
+            <Card
+              key={idx}
+              data={item}
+              dailyData={dailyData}
+              setModal={setModal}
+              setModalData={setModalData}
+            />
+          ))}
     </div>
   );
 };

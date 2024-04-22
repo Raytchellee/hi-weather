@@ -13,7 +13,7 @@
 
 .navContent {
   width: 100%;
-  margin: 110px auto;
+  margin: 110px auto 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,10 +24,13 @@
 }
 
 .navWrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  min-width: 100vw;
+  width: 100%;
   min-height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
 }

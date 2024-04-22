@@ -1,8 +1,24 @@
 import { CurrentWeatherData, FutureWeatherData } from "@/interface/data.interface";
 import { atom } from "recoil";
 
-export const LoadingAtom = atom({
-  key: "loadingAtom",
+export const forecastLoading = atom({
+  key: "forecastLoading",
+  default: {
+    type: "",
+    visible: false,
+  },
+});
+
+export const currentLoading = atom({
+  key: "currentLoading",
+  default: {
+    type: "",
+    visible: false,
+  },
+});
+
+export const geocodeLoading = atom({
+  key: "geocodeLoading",
   default: {
     type: "",
     visible: false,
