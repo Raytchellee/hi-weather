@@ -9,6 +9,7 @@ export const currentFullNames: Record<string, object> = {
   "feels_like": { label: "Feels Like", type: "temperature", unit: "°C" },
   "temp_min": { label: "Minimum Temperature", type: "temperature", unit: "°C" },
   "temp_max": { label: "Maximum Temperature", type: "temperature", unit: "°C" },
+  "temp_kf": { label: "Temperature Change", type: "temperature", unit: "°C" },
   "pressure": { label: "Pressure", type: "number", unit: "hPa" },
   "humidity": { label: "Humidity", type: "number", unit: "%" },
   "sea_level": { label: "Sea Level", type: "number", unit: "hPa" },
@@ -21,6 +22,7 @@ export const currentFullNames: Record<string, object> = {
   "clouds": { label: "Clouds" },
   "all": { label: "Clouds", type: "number", unit: "%" },
   "dt": { label: "Date/Time", type: "time", unit: "" },
+  "dt_txt": { label: "Date/Time", type: "time", unit: "" },
   "sys": { label: "System" },
   "country": { label: "Country" },
   "sunrise": { label: "Sunrise", type: "time", unit: "" },
@@ -28,5 +30,9 @@ export const currentFullNames: Record<string, object> = {
   "timezone": { label: "Timezone", type: "timezone", unit: "" },
   "base": { label: "Base" },
   "name": { label: "Name" },
-  "cod": { label: "Code" }
+  "cod": { label: "Code" },
+  "pod": { label: "Part of Day", type: "name", unit: "" },
+  "pop": { label: "Precipitation", type: "number", unit: "" },
+  "3h": { label: "3h", type: "number", unit: "" },
+
 };

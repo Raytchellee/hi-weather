@@ -2,13 +2,13 @@ import React, { CSSProperties } from "react";
 import { useRecoilState } from "recoil";
 import RingLoader from "react-spinners/RingLoader";
 import { CloudyIcon, RainyIcon, SunnyIcon } from "@/components/icons";
-import { currentWeatherStore, LoadingAtom } from "@/stores";
+import { currentWeatherStore, currentLoading } from "@/stores";
 import styles from "./index.module.css";
 import { capitaliseText, capitaliseWord } from "@/utils/capitalize-text";
 
 const CurrentDetails: React.FC = () => {
   const [weatherData, setWeatherData] = useRecoilState(currentWeatherStore);
-  const [load, setLoad] = useRecoilState(LoadingAtom);
+  const [load, setLoad] = useRecoilState(currentLoading);
 
   const loading = load?.visible && load?.type == "get-current-weather";
 

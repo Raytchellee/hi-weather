@@ -4,25 +4,19 @@ import { ForecastList } from "@/interface/data.interface";
 import { CloudyIcon } from "@/components/icons";
 import { capitaliseWord } from "@/utils";
 
-interface WeatherData {
-  // dt: number;
-  // main: {
-  //   temp: number;
-  // };
-  // weather: {
-  //   description: string;
-  //   icon: string;
-  // }[];
-
-  data: ForecastList;
-}
-
 interface WeatherCardProps {
   data: ForecastList;
-  // data: WeatherData;
+  dailyData: Record<string, any>;
+  setModal: (modal: string) => void;
+  setModalData: (data: any) => void;
 }
 
-const WeatherCard: React.FC<WeatherCardProps> = ({ data }) => {
+const WeatherCard: React.FC<WeatherCardProps> = ({
+  data,
+  dailyData,
+  setModal,
+  setModalData,
+}) => {
   const date = data?.dt ? new Date(data?.dt * 1000) : new Date("");
   const weekday = date.toLocaleDateString("en-US", { weekday: "short" });
   const day = date.toLocaleDateString("en-US", { day: "numeric" });
@@ -36,8 +30,15 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ data }) => {
     ? `https://openweathermap.org/img/wn/${data.weather[0]?.icon}.png`
     : "";
 
+  const handleClick = () => {
+    const day = data?.dt_txt?.split(" ")[0];
+    const details = day ? dailyData[day] : [];
+    setModalData(details);
+    setModal("daily-details");
+  };
+
   return (
-    <div className={styles.weatherCard}>
+    <div className={styles.weatherCard} onClick={handleClick}>
       <h2 className={styles.date}>
         {weekday},{day} {month}
       </h2>

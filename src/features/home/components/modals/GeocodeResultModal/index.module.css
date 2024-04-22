@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10000000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-family: monospace;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 400px;
+  min-height: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid white;
+
+  @media screen and (max-width: 768px) {
+    min-width: 280px;
+  }
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.title_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.temp {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.desc {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.render_properties {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 1.5rem;
+}
+
+.item {
+  border-radius: 15px;
+  border: 1px solid #fff;
+  font-size: 12px;
+  padding: 5px 8px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.6);
+}

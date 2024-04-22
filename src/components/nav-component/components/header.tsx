@@ -10,20 +10,14 @@ import Search from "@/components/search";
 import { WeatherLogo } from "@/components/icons";
 import { useActions } from "@/actions/fetch-data";
 import { IoReload } from "react-icons/io5";
-import { LoadingAtom } from "@/stores";
-import { useRecoilState } from "recoil";
 import { CountryDropdown, RegionDropdown } from "react-country-region-selector";
 
 export const Header = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [load, setLoad] = useRecoilState(LoadingAtom);
   const [selectedCountry, setSelectedCountry] = useState<string>("");
   const [selectedRegion, setSelectedRegion] = useState<string>("");
   const { fetchCurrentData, fetchForecast } = useActions();
 
-  const loading =
-    load.visible &&
-    (load.type == "get-current-weather" || load.type == "get-forecast-weather");
   const handleSearch = async (
     s_city?: string,
     s_state?: string,
