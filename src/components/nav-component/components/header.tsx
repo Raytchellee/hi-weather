@@ -11,6 +11,8 @@ import { WeatherLogo } from "@/components/icons";
 import { useActions } from "@/actions/fetch-data";
 import { IoReload } from "react-icons/io5";
 import { CountryDropdown, RegionDropdown } from "react-country-region-selector";
+import toast from "react-hot-toast";
+import { isNotEmpty } from "@/utils/is-not-empty";
 
 export const Header = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -23,6 +25,16 @@ export const Header = () => {
     s_state?: string,
     s_country?: string
   ) => {
+    if (
+      (s_state || selectedRegion || s_country || selectedCountry) &&
+      !isNotEmpty(s_city) &&
+      !isNotEmpty(searchQuery)
+    ) {
+      toast.error(
+        "You cannot enter a country without a city. Please enter a city name"
+      );
+      return;
+    }
     await fetchCurrentData({
       city: s_city !== undefined ? s_city : searchQuery,
       state: s_state !== undefined ? s_state : selectedRegion,

@@ -17,10 +17,8 @@ const Search: React.FC<SearchProps> = ({
   handleKeyDown,
 }) => {
   const [searchToggle, setSearchToggle] = useState(false);
-  // const [searchData, setSearchData] = useState("");
 
   const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
-    // setSearchData(e.target.value);
     updateSearchQuery(e.target.value);
   };
 
