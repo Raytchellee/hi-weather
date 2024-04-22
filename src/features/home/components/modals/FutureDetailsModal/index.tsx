@@ -12,7 +12,9 @@ interface Props {
 }
 
 const FutureDetailsModal: React.FC<Props> = ({ data, open, onClose }) => {
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+  const [isSmallScreen, setIsSmallScreen] = useState(
+    typeof window !== "undefined" && window.innerWidth < 768
+  );
   const [modifiedData, setModifiedData] = useState<{ [key: string]: any[] }[]>(
     []
   );

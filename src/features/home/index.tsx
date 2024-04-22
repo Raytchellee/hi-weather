@@ -2,8 +2,6 @@
 import React, { EventHandler, useEffect, useState } from "react";
 import styles from "./index.module.css";
 import { useActions } from "@/actions/fetch-data";
-import { useRecoilState } from "recoil";
-import { currentWeatherStore, futureWeatherStore } from "@/stores";
 import CurrentDetails from "./components/CurrentDetails";
 import RenderProperties from "./components/RenderProperties";
 import FutureDetails from "./components/FutureDetails";
@@ -25,7 +23,6 @@ export default function HomePage() {
   const fetchData = async () => {
     await fetchCurrentData({ city });
     await fetchForecast({ city });
-    await fetchCurrentByGeoCode({ lon: "3.75", lat: "6.5833" });
   };
 
   const handleOpen = () => {
