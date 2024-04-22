@@ -84,6 +84,7 @@ export const useActions = () => {
           return true;
         } else if (data?.message) {
           toast.error(data?.message);
+          return false;
         } else {
           toast.error(
             "An error occurred while fetching current data. Please ensure you entered the correct details"
@@ -163,6 +164,7 @@ export const useActions = () => {
           return true;
         } else if (data?.message) {
           toast.error(data?.message);
+          return false;
         } else {
           toast.error(
             "An error occurred while fetching forecast data. Please ensure you entered the correct details"
@@ -239,6 +241,7 @@ export const useActions = () => {
           return true;
         } else if (data?.message) {
           toast.error(data?.message);
+          return false;
         } else {
           toast.error(
             "An error occurred while fetching geocode data. Please ensure you entered the correct details"
