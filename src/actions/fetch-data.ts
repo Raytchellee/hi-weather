@@ -1,7 +1,14 @@
 import { useRecoilState, useRecoilValue } from "recoil";
 import { useCallback, useState } from "react";
 import { toast } from "react-hot-toast";
-import { currentWeatherStore, futureWeatherStore, currentGeocodeStore, currentLoading, forecastLoading, geocodeLoading } from "@/stores";
+import {
+  currentWeatherStore,
+  futureWeatherStore,
+  currentGeocodeStore,
+  currentLoading,
+  forecastLoading,
+  geocodeLoading,
+} from "@/stores";
 import { QueryProps } from "@/interface/data.interface";
 
 export const useActions = () => {
@@ -75,6 +82,9 @@ export const useActions = () => {
         if (Number(data.cod) === 200) {
           setCurrent(data);
           return true;
+        } else if (data?.message) {
+          toast.error(data?.message);
+          return false;
         } else {
           toast.error(
             "An error occurred while fetching current data. Please ensure you entered the correct details"
@@ -152,6 +162,9 @@ export const useActions = () => {
         if (Number(data.cod) === 200) {
           setFuture(data);
           return true;
+        } else if (data?.message) {
+          toast.error(data?.message);
+          return false;
         } else {
           toast.error(
             "An error occurred while fetching forecast data. Please ensure you entered the correct details"
@@ -170,7 +183,6 @@ export const useActions = () => {
     },
     []
   );
-
 
   // const fetchCurrentByGeoCode = useCallback(
   //   async ({ lat, lon, unit }: QueryProps) => {
@@ -213,7 +225,8 @@ export const useActions = () => {
 
   const fetchCurrentByGeoCode = useCallback(
     async ({ lat, lon, unit }: QueryProps) => {
-      const url = `${baseUrl}/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${unit || defaultUnit}`;
+      const url = `${baseUrl}/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${unit || defaultUnit
+        }`;
       setGeocodeLoading({
         type: "get-geocode-weather",
         visible: true,
@@ -226,6 +239,9 @@ export const useActions = () => {
         if (Number(data.cod) === 200) {
           setCurrentGeo(data);
           return true;
+        } else if (data?.message) {
+          toast.error(data?.message);
+          return false;
         } else {
           toast.error(
             "An error occurred while fetching geocode data. Please ensure you entered the correct details"
@@ -244,7 +260,6 @@ export const useActions = () => {
     },
     []
   );
-
 
   return { fetchCurrentData, fetchForecast, fetchCurrentByGeoCode };
 };
