@@ -32,7 +32,7 @@ export const Header = () => {
       !isNotEmpty(searchQuery)
     ) {
       toast.error(
-        "You cannot enter a country without a city. Please enter a city name"
+        "You cannot search by country without entering a city name. Please enter a city name"
       );
       return;
     }
