@@ -46,11 +46,14 @@ Welcome to Weather Forecast! This application provides real-time weather updates
 
 ## Screenshots
 
-![App Screenshot](https://github.com/Raytchellee/hi-weather/main/public/images/Screenshot1.png)
+![App Screenshot](https://github.com/Raytchellee/hi-weather/blob/main/public/images/Screenshot1.png)
 
-![App Screenshot](https://github.com/Raytchellee/hi-weather/main/public/images/Screenshot2.png)
 
-![App Screenshot](https://github.com/Raytchellee/hi-weather/main/public/images/Screenshot3.png)
+![App Screenshot](https://github.com/Raytchellee/hi-weather/blob/main/public/images/Screenshot2.png)
+
+
+![App Screenshot](https://github.com/Raytchellee/hi-weather/blob/main/public/images/Screenshot3.png)
+
 
 ## Live Demo
 
