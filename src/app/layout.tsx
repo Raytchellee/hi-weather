@@ -60,7 +60,7 @@ export default function RootLayout({
         style={{
           backgroundImage: `url('/images/${Images[index]}')`,
           backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
+          backgroundRepeat: "repeat",
           backgroundPosition: "center",
           fontFamily: "monospace",
           transition: "background-image 1s ease-in-out",
