@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   min-width: 100%;
-  min-height: 100%;
+  color: #fff !important;
 }
 
 .searchContainer {
@@ -84,4 +84,5 @@
   background-color: rgba(0, 0, 0, 0.4);
   cursor: pointer;
   font-family: monospace;
+  color: #fff;
 }

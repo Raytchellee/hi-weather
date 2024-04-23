@@ -13,6 +13,7 @@ import { IoReload } from "react-icons/io5";
 import { CountryDropdown, RegionDropdown } from "react-country-region-selector";
 import toast from "react-hot-toast";
 import { isNotEmpty } from "@/utils/is-not-empty";
+import Link from "next/link";
 
 export const Header = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -31,7 +32,7 @@ export const Header = () => {
       !isNotEmpty(searchQuery)
     ) {
       toast.error(
-        "You cannot enter a country without a city. Please enter a city name"
+        "You cannot search by country without entering a city name. Please enter a city name"
       );
       return;
     }
@@ -53,10 +54,13 @@ export const Header = () => {
   };
   return (
     <div className={styles.header_wrapper}>
-      <div className={styles.logo_container}>
+      <Link
+        href="https://github.com/Raytchellee/hi-weather"
+        className={styles.logo_container}
+      >
         <WeatherLogo />
         <span className={styles.logo_text}>Weather Forecast</span>
-      </div>
+      </Link>
       <div className={styles.input_wrapper}>
         <div className={styles.action}>
           <span
@@ -91,7 +95,7 @@ export const Header = () => {
               }}
             />
           </div>
-          <div className={styles.input_container}>
+          {/* <div className={styles.input_container}>
             <RegionDropdown
               countryValueType="short"
               valueType="short"
@@ -101,7 +105,7 @@ export const Header = () => {
                 setSelectedRegion(value);
               }}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

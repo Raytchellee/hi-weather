@@ -61,22 +61,24 @@ const GeocodeQueryModal: React.FC<GeocodeQueryModalProps> = ({
         </div>
         <div className={styles.input_wrap}>
           <div className={styles.input_box}>
-            <label htmlFor="longitude">Longitude:</label>
-            <input
-              type="number"
-              id="longitude"
-              value={longitude}
-              onChange={handleLongitudeChange}
-              className={styles.input}
-            />
-          </div>
-          <div className={styles.input_box}>
             <label htmlFor="latitude">Latitude:</label>
             <input
               type="number"
               id="latitude"
               value={latitude}
               onChange={handleLatitudeChange}
+              placeholder="6.5833"
+              className={styles.input}
+            />
+          </div>
+          <div className={styles.input_box}>
+            <label htmlFor="longitude">Longitude:</label>
+            <input
+              type="number"
+              id="longitude"
+              value={longitude}
+              onChange={handleLongitudeChange}
+              placeholder="3.75"
               className={styles.input}
             />
           </div>
