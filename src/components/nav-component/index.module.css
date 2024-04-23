@@ -29,8 +29,5 @@
   flex-direction: column;
   gap: 0.5rem;
   width: 100%;
-  min-height: 100vh;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  overflow-y: auto;
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }

@@ -62,11 +62,9 @@ export default function RootLayout({
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          minWidth: "100vw",
-          minHeight: "100vh",
-          overflow: "hidden",
           fontFamily: "monospace",
           transition: "background-image 1s ease-in-out",
+          color: "#fff !important",
         }}
       >
         <RecoilRoot>{children}</RecoilRoot>
