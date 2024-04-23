@@ -46,11 +46,18 @@ Welcome to Weather Forecast! This application provides real-time weather updates
 
 ## Screenshots
 
-![App Screenshot](/path/to/image.png)
+![App Screenshot](https://github.com/
+Raytchellee/hi-weather/blob/main/public/images/screenshot1.png)
+![App Screenshot](https://github.com/
+Raytchellee/hi-weather/blob/main/public/images/screenshot2.png)
+![App Screenshot](https://github.com/
+Raytchellee/hi-weather/blob/main/public/images/screenshot3.png)
 
 ## Live Demo
 
-For a live demo, visit Weather Forecast Demo. ......
+For a live demo, visit Weather Forecast Demo. 
+
+https://hi-weather-five.vercel.app/ 
 
 ## Authors
 ### Frontend Team
@@ -84,5 +91,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 Have questions or feedback? Open an issue on GitHub.
 
-Thank you for using Weather Forecast!
-
+Thank you for using Weather Forecast! 
