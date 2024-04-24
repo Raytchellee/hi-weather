@@ -34,7 +34,7 @@ Welcome to Weather Forecast! This application provides real-time weather updates
 
 ### Deployment
 - **Integration with Weather Data APIs**: Integrated with weather data APIs such as OpenWeatherMap to fetch real-time weather information. This integration enhances the application's functionality by providing accurate weather forecasts and data.
-- **Vercel**: Utilized as the hosting platform for deploying the application. Vercel offers seamless deployment and scaling of web applications, providing reliability and performance.
+- **Render**: Employed as the hosting platform for deploying the application. Render offers seamless deployment and scaling of web applications, ensuring reliability and performance.
 
 
 ## Installation
@@ -46,11 +46,20 @@ Welcome to Weather Forecast! This application provides real-time weather updates
 
 ## Screenshots
 
-![App Screenshot](/path/to/image.png)
+![App Screenshot](https://github.com/Raytchellee/hi-weather/blob/main/public/images/Screenshot1.png)
+
+
+![App Screenshot](https://github.com/Raytchellee/hi-weather/blob/main/public/images/Screenshot2.png)
+
+
+![App Screenshot](https://github.com/Raytchellee/hi-weather/blob/main/public/images/Screenshot3.png)
+
 
 ## Live Demo
 
-For a live demo, visit Weather Forecast Demo. ......
+For a live demo, visit Weather Forecast Demo. 
+
+https://hi-weather.onrender.com/
 
 ## Authors
 ### Frontend Team
@@ -74,9 +83,9 @@ For a live demo, visit Weather Forecast Demo. ......
   - Integrated third-party services for additional functionality.
   - Deployed and managed backend services.
    
-## Deploy on Vercel
+## Deploy on Render
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The simplest method to deploy your Next.js app is by utilizing the [Render platform](https://render.com/docs/deploy-nextjs), a robust solution for deployment and scaling, offering reliability and performance.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
@@ -84,5 +93,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 Have questions or feedback? Open an issue on GitHub.
 
-Thank you for using Weather Forecast!
-
+Thank you for using Weather Forecast! 
