@@ -93,4 +93,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 Have questions or feedback? Open an issue on GitHub.
 
-Thank you for using Weather Forecast! 
+Thank you for using Weather Forecast!  
