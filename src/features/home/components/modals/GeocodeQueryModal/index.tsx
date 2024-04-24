@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./index.module.css";
 import { IoCloseSharp } from "react-icons/io5";
 import { useActions } from "@/actions/fetch-data";
@@ -23,6 +23,26 @@ const GeocodeQueryModal: React.FC<GeocodeQueryModalProps> = ({
   const { fetchCurrentByGeoCode } = useActions();
 
   const loading = load.visible && load.type == "get-geocode-weather";
+
+  useEffect(() => {
+    const getGeolocation = async () => {
+      try {
+        const position = await new Promise<GeolocationPosition>(
+          (resolve, reject) =>
+            navigator.geolocation.getCurrentPosition(resolve, reject)
+        );
+        setLatitude(position.coords.latitude.toString());
+        setLongitude(position.coords.longitude.toString());
+      } catch (error) {
+        console.error("Error getting geolocation:", error);
+        toast.error("Failed to get your current location.");
+      }
+    };
+
+    if (open) {
+      getGeolocation();
+    }
+  }, [open]);
 
   const handleLongitudeChange = (
     event: React.ChangeEvent<HTMLInputElement>
