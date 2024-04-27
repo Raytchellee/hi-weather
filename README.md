@@ -2,6 +2,18 @@
 
 Welcome to Weather Forecast! This application provides real-time weather updates and forecasts for any location worldwide. Whether you're planning a trip, checking the weather for your daily commute, or just curious about conditions elsewhere, Weather Forecast has you covered.
 
+## Table of Contents
+- [Features](#features)
+- [How to Use](#how-to-use)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Screenshots](#screenshots)
+- [Live Demo](#live-demo)
+- [Authors](#authors)
+- [Deploy on Render](#deploy-on-render)
+- [License](#license)
+- [Contact](#contact)
+
 ## Features
 
 - **Current Weather**: Get up-to-date information on the current weather conditions, including temperature, humidity, wind speed, and more, for any location you choose.
@@ -88,6 +100,10 @@ https://hi-weather.onrender.com/
 The simplest method to deploy your Next.js app is by utilizing the [Render platform](https://render.com/docs/deploy-nextjs), a robust solution for deployment and scaling, offering reliability and performance.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
