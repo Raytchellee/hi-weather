@@ -78,7 +78,7 @@ https://hi-weather.onrender.com/
    - Designed and developed RESTful APIs using Node.js and Express.
    - Implemented database schemas and models using MongoDB.
     
-- [Afua Adjei-Arthur](https://github.com/afuawonders)  - *Backend Developer*
+- [Afua Addae Adjei-Arthur](https://github.com/afuawonders)  - *Backend Developer*
   -  Developed API endpoints.
   - Integrated third-party services for additional functionality.
   - Deployed and managed backend services.
