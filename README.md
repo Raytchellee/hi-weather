@@ -55,7 +55,7 @@ Welcome to Weather Forecast! This application provides real-time weather updates
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/Raytchellee/hi-weather.git
+1. Clone the repository: `git clone https://github.com/Raytchellee/hi-weather.git`
 2. Navigate to the project directory: `cd hi-weather`
 3. Install dependencies: `npm install`
 4. Start the application: `npm start`
