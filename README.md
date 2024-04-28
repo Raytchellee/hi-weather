@@ -73,7 +73,7 @@ Welcome to Weather Forecast! This application provides real-time weather updates
 
 ## Live Demo
 
-For a live demo, visit the Hi Weather Forecast Demo link below:
+For a live demo, visit the link below:
 
 https://hi-weather.onrender.com/
 
