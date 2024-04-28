@@ -2,6 +2,22 @@
 
 Welcome to Weather Forecast! This application provides real-time weather updates and forecasts for any location worldwide. Whether you're planning a trip, checking the weather for your daily commute, or just curious about conditions elsewhere, Weather Forecast has you covered.
 
+## Table of Contents
+1. [Features](#features)
+2. [How to Use](#how-to-use)
+3. [Technologies Used](#technologies-used)
+    - [Frontend](#frontend)
+    - [Backend](#backend)
+    - [Database](#database)
+    - [Deployment](#deployment)
+4. [Installation](#installation)
+5. [Screenshots](#screenshots)
+6. [Live Demo](#live-demo)
+7. [Authors](#authors)
+8. [Deploy on Render](#deploy-on-render)
+9. [License](#license)
+10. [Contact](#contact)
+
 ## Features
 
 - **Current Weather**: Get up-to-date information on the current weather conditions, including temperature, humidity, wind speed, and more, for any location you choose.
@@ -39,7 +55,7 @@ Welcome to Weather Forecast! This application provides real-time weather updates
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/Raytchellee/hi-weather.git
+1. Clone the repository: `git clone https://github.com/Raytchellee/hi-weather.git`
 2. Navigate to the project directory: `cd hi-weather`
 3. Install dependencies: `npm install`
 4. Start the application: `npm start`
@@ -57,7 +73,7 @@ Welcome to Weather Forecast! This application provides real-time weather updates
 
 ## Live Demo
 
-For a live demo, visit Weather Forecast Demo. 
+For a live demo, visit the link below:
 
 https://hi-weather.onrender.com/
 
@@ -89,8 +105,13 @@ The simplest method to deploy your Next.js app is by utilizing the [Render platf
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
 ## Contact
 
 Have questions or feedback? Open an issue on GitHub.
 
-Thank you for using Weather Forecast! 
+
+Thank you for using Hi Weather Forecast!
