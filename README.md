@@ -113,4 +113,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 Have questions or feedback? Open an issue on GitHub.
 
-Thank you for using Weather Forecast!  
+Thank you for using Hi Weather Forecast!
