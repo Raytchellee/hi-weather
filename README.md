@@ -3,16 +3,20 @@
 Welcome to Weather Forecast! This application provides real-time weather updates and forecasts for any location worldwide. Whether you're planning a trip, checking the weather for your daily commute, or just curious about conditions elsewhere, Weather Forecast has you covered.
 
 ## Table of Contents
-- [Features](#features)
-- [How to Use](#how-to-use)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Screenshots](#screenshots)
-- [Live Demo](#live-demo)
-- [Authors](#authors)
-- [Deploy on Render](#deploy-on-render)
-- [License](#license)
-- [Contact](#contact)
+1. [Features](#features)
+2. [How to Use](#how-to-use)
+3. [Technologies Used](#technologies-used)
+    - [Frontend](#frontend)
+    - [Backend](#backend)
+    - [Database](#database)
+    - [Deployment](#deployment)
+4. [Installation](#installation)
+5. [Screenshots](#screenshots)
+6. [Live Demo](#live-demo)
+7. [Authors](#authors)
+8. [Deploy on Render](#deploy-on-render)
+9. [License](#license)
+10. [Contact](#contact)
 
 ## Features
 
