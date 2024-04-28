@@ -24,46 +24,6 @@ export const useActions = () => {
   const defaultCity = "lagos";
   const defaultCount = 40;
 
-  // const fetchCurrentData = useCallback(
-  //   async ({ city, unit, state, country }: QueryProps) => {
-  //     const url = `${baseUrl}/data/2.5/weather?q=${city || defaultCity}${state ? "," + state : ""
-  //       }${country ? "," + country : ""}&appid=${apiKey}&units=${unit || defaultUnit
-  //       }`;
-  //     setCurrentLoading({
-  //       type: "get-current-weather",
-  //       visible: true,
-  //     });
-
-  //     return await new Promise((resolve, reject) => {
-  //       fetch(`${url}`)
-  //         .then((response) => response.json())
-  //         .then((response) => {
-  //           if (Number(response.cod) === 200) {
-  //             setCurrent(response);
-  //             resolve(true);
-  //           } else {
-  //             toast.error(
-  //               "An error occurred while fetching current data. Please ensure you entered the correct details"
-  //             );
-  //             setCurrentLoading({
-  //               type: "get-current-weather",
-  //               visible: false,
-  //             });
-  //             resolve(false);
-  //           }
-  //         })
-  //         .catch((err) => {
-  //           setCurrentLoading({
-  //             type: "get-current-weather",
-  //             visible: false,
-  //           });
-  //           toast.error(err.message);
-  //           resolve(false);
-  //         });
-  //     });
-  //   },
-  //   []
-  // );
 
   const fetchCurrentData = useCallback(
     async ({ city, unit, state, country }: QueryProps) => {
@@ -104,46 +64,6 @@ export const useActions = () => {
     []
   );
 
-  // const fetchForecast = useCallback(
-  //   async ({ city, count, unit, state, country }: QueryProps) => {
-  //     const url = `${baseUrl}/data/2.5/forecast?q=${city || defaultCity}${state ? "," + state : ""
-  //       }${country ? "," + country : ""}&appid=${apiKey}&cnt=${count || defaultCount
-  //       }&units=${unit || defaultUnit}`;
-  //     setForecastLoading({
-  //       type: "get-forecast-weather",
-  //       visible: true,
-  //     });
-
-  //     return await new Promise((resolve, reject) => {
-  //       fetch(`${url}`)
-  //         .then((response) => response.json())
-  //         .then((response) => {
-  //           if (Number(response.cod) == 200) {
-  //             setFuture(response);
-  //             resolve(true);
-  //           } else {
-  //             toast.error(
-  //               "An error occurred while fetching forecast data. Please ensure you entered the correct details"
-  //             );
-  //             setForecastLoading({
-  //               type: "get-forecast-weather",
-  //               visible: false,
-  //             });
-  //             resolve(false);
-  //           }
-  //         })
-  //         .catch((err) => {
-  //           setForecastLoading({
-  //             type: "get-forecast-weather",
-  //             visible: false,
-  //           });
-  //           toast.error(err.message);
-  //           resolve(false);
-  //         });
-  //     });
-  //   },
-  //   []
-  // );
 
   const fetchForecast = useCallback(
     async ({ city, count, unit, state, country }: QueryProps) => {
@@ -184,44 +104,6 @@ export const useActions = () => {
     []
   );
 
-  // const fetchCurrentByGeoCode = useCallback(
-  //   async ({ lat, lon, unit }: QueryProps) => {
-  //     const url = `${baseUrl}/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${unit || defaultUnit}`;
-  //     setGeocodeLoading({
-  //       type: "get-geocode-weather",
-  //       visible: true,
-  //     });
-
-  //     return await new Promise((resolve, reject) => {
-  //       fetch(`${url}`)
-  //         .then((response) => response.json())
-  //         .then((response) => {
-  //           if (Number(response.cod) == 200) {
-  //             setCurrentGeo(response);
-  //             resolve(true);
-  //           } else {
-  //             toast.error(
-  //               "An error occurred while fetching geocode data. Please ensure you entered the correct details"
-  //             );
-  //             setGeocodeLoading({
-  //               type: "get-geocode-weather",
-  //               visible: false,
-  //             });
-  //             resolve(false);
-  //           }
-  //         })
-  //         .catch((err) => {
-  //           setGeocodeLoading({
-  //             type: "get-geocode-weather",
-  //             visible: false,
-  //           });
-  //           toast.error(err.message);
-  //           resolve(false);
-  //         });
-  //     });
-  //   },
-  //   []
-  // );
 
   const fetchCurrentByGeoCode = useCallback(
     async ({ lat, lon, unit }: QueryProps) => {
