@@ -14,7 +14,7 @@ Welcome to Weather Forecast! This application provides real-time weather updates
 5. [Screenshots](#screenshots)
 6. [Live Demo](#live-demo)
 7. [Authors](#authors)
-8. [Deploy on Render](#deploy-on-render)
+8. [Deploy on Vercel](#deploy-on-vercel)
 9. [License](#license)
 10. [Contact](#contact)
 
@@ -50,8 +50,7 @@ Welcome to Weather Forecast! This application provides real-time weather updates
 
 ### Deployment
 - **Integration with Weather Data APIs**: Integrated with weather data APIs such as OpenWeatherMap to fetch real-time weather information. This integration enhances the application's functionality by providing accurate weather forecasts and data.
-- **Render**: Employed as the hosting platform for deploying the application. Render offers seamless deployment and scaling of web applications, ensuring reliability and performance.
-
+- **Vercel**: Utilized as the hosting platform for deploying the application. Vercel offers seamless deployment and scaling of web applications, providing reliability and performance.
 
 ## Installation
 
@@ -75,7 +74,7 @@ Welcome to Weather Forecast! This application provides real-time weather updates
 
 For a live demo, visit the link below:
 
-https://hi-weather.onrender.com/
+https://hi-weather-five.vercel.app/ 
 
 ## Authors
 ### Frontend Team
@@ -99,9 +98,8 @@ https://hi-weather.onrender.com/
   - Integrated third-party services for additional functionality.
   - Deployed and managed backend services.
    
-## Deploy on Render
-
-The simplest method to deploy your Next.js app is by utilizing the [Render platform](https://render.com/docs/deploy-nextjs), a robust solution for deployment and scaling, offering reliability and performance.
+## Deploy on Vercel
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
