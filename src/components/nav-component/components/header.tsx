@@ -55,7 +55,7 @@ export const Header = () => {
   return (
     <div className={styles.header_wrapper}>
       <Link
-        href="https://github.com/Raytchellee/hi-weather"
+        href="https://github.com/afuawonders/Hi-Weather.git"
         className={styles.logo_container}
       >
         <WeatherLogo />
